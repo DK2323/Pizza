@@ -1,0 +1,95 @@
+.navbar{
+    padding: 0.5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.1rem 1rem #aba2a2;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 5rem;
+}
+
+.navbar ul li .link{
+    color: black;
+}
+
+.navbar ul li .link:hover{
+    color: orange;
+}
+
+.navbar ul li .cartLink div{
+    background: #ffa600bd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    padding: 0.1rem .5rem;
+
+}
+
+.navbar ul li .cartLink div:hover{
+    background: orange;
+}
+
+.navbar ul li .cartLink div span{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 0 .2rem;
+}
+
+.navbar ul li .cartLink div .cartImg{
+    padding: 0 .2rem;
+}
+
+
+
+
+@media(max-width:992px){
+    .navbar ul li{
+        padding-left: 4rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media(max-width:768px){
+    .navbar ul li{
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar{
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar ul li{
+        padding: 1rem;
+    }
+
+
+
+   
+
+}

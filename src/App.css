@@ -1,38 +1,313 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  /* transition: all .2s linear; */
+  text-decoration: none;
+  list-style: none;
+
+
+}
+
+.header{
+  margin: 1.5rem 0;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header .headerImage{
+  flex: 1 1 20rem;
+}
+
+.header .headerImage img{
+  width: 100%;
+}
+
+.header .headerText{
+  text-align: center;
+  flex: 1 1 40rem;
+}
+
+.header .headerText span{
+  font-size: 3rem;
+  font-style: italic;
+  color: orange;
+}
+
+.header .headerText h1{
+  font-size: 2rem;
+}
+
+.header .headerText button{
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #ffa600bd;
+  cursor: pointer;
+}
+
+.header .headerText button:hover{
+  background: orange;
+}
+
+.productSection{
+  padding: 1rem 5rem;
+}
+
+.productSection .productTitle{
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:tomato
+}
+
+.productSection .products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.productSection .products .singleProduct{
+  text-align: center;
+  flex: 1 1 15rem;
+}
+
+.products .singleProduct .productImg{
+  width: 100%;
+  height: 12rem;
+}
+
+.products .singleProduct .productName{
+  color: black;
+}
+
+.products .singleProduct .productPrice{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+.products .singleProduct .productPrice .orange{
+  background-color: orange;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.products .singleProduct .productPrice .green{
+  background: green;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+
+.singlePbox{
+  padding: 2rem 5rem;
+
+}
+
+.singlePbox .backBtn{
+  background: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.singlePbox .singleP{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.singlePbox .singleP img{
+  flex: 1 1 1rem;
+  width: 100%;
+  
+}
+
+.singlePbox .singleP .descript{
+  flex: 1 1 50rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.singlePbox .singleP .descript .size{
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.singlePbox .singleP .descript h1{
+  margin-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.singlePbox .singleP .descript .price{
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.singlePbox .singleP .descript .singleProductG{
+  background: green;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.singlePbox .singleP .descript .singleProductO{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: orange;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.singlePbox .singleP .descript button:hover{
+  background: orange;
 }
+
+.cart{
+  padding: 2rem 5rem;
+}
+
+.cart .cart-heading{
+  margin: 1rem 0;
+}
+
+.cart ul li .cartItem{
+  padding-bottom: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.cart ul li .cartItem .cartItemImg{
+  display: flex;
+  align-items: center;
+  flex: 1 1 7rem;
+}
+
+.cart ul li .cartItem .cartItemImg img{
+  height: 4rem;
+  width: 4rem;
+}
+
+.cart ul li .cartItem .cartItemImg span{
+  margin-left: .5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cart ul li .cartItem .cartItembtn{
+  flex: 1 1 3rem;
+  text-align: center;
+}
+
+.cart ul li .cartItem .cartItembtn .minus{
+  font-weight: bold;
+  font-size: 1rem;
+  background: orange;
+  padding: 0.6rem;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cart ul li .cartItem .cartItembtn .plus{
+  font-weight: bold;
+  font-size: 1rem;
+  background: orange;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer; 
+}
+
+.cart ul li .cartItem span{
+  flex: 1 1 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cart ul li .cartItem button{
+  font-weight: bold;
+  background: red;
+  padding: .4rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.cart .cartTotal{
+  margin: 1rem 0;
+  text-align: right;  
+}
+
+.cart .cartOrder{
+  text-align: right;
+}
+
+.cart .cartOrder button{
+  background: orange;
+  padding: .3rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.emptyCartImg img{
+  width:100%;
+  height:36rem;
+}
+
+
+
+@media(max-width:576px){
+  .singlePbox .singleP .descript h1{
+    font-size: 1rem;
+  }
+
+  .cart .cart-heading{
+    text-align: center;
+  }
+
+  .cart ul li .cartItem .cartItemImg{
+    flex-direction: column;
+  }
+
+  .cart ul li .cartItem{
+    flex-direction: column;
+  }
+
+  .cart .cartTotal{
+    text-align: center;
+  }
+
+  .cart .cartOrder{
+    text-align: center;
+  }
+
+  .emptyCartImg img{
+    height:24rem;
+  }
+
+}
+
